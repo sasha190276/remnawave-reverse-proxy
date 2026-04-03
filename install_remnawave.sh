@@ -2368,10 +2368,10 @@ case $OPTION in
         ;;
     4)
         load_selfsteal_templates_module
-        if [[ ! -d "/opt/remnawave" && ! -d "/opt/remnanode" ]]; then
-            echo -e "${COLOR_YELLOW}${LANG[NO_PANEL_NODE_INSTALLED]}${COLOR_RESET}"
-            exit 1
-        else
+        # if [[ ! -d "/opt/remnawave" && ! -d "/opt/remnanode" ]]; then
+        #     echo -e "${COLOR_YELLOW}${LANG[NO_PANEL_NODE_INSTALLED]}${COLOR_RESET}"
+        #     exit 1
+        # else
             show_template_source_options
             reading "${LANG[CHOOSE_TEMPLATE_OPTION]}" TEMPLATE_OPTION
             case $TEMPLATE_OPTION in
@@ -2401,8 +2401,8 @@ case $OPTION in
                     echo -e "${COLOR_YELLOW}${LANG[INVALID_TEMPLATE_CHOICE]}${COLOR_RESET}"
                     exit 1
                     ;;
-            esac
-        fi
+        #     esac
+        # fi
         ;;
     5)
         manage_custom_legiz
