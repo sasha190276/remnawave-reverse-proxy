@@ -2403,7 +2403,7 @@ case $OPTION in
                     ;;
         #     esac
         # fi
-        ;;
+        # ;;
     5)
         manage_custom_legiz
         sleep 2
